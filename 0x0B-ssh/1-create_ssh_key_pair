@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-# Bash script that uses ssh to connect to a server
-# private key ~/.ssh/school; user ubuntu; host IP given as 34.239.147.104
+# Bash script that creates a RSA key pair
+# Number of bits in the created key to be created 4096
+# Name of the created private key must be school
+# The created key must be protected by the passphrase betty
 
-ssh -i ~/.ssh/school ubuntu@35.174.184.193
+ssh-keygen -b 4096 -f school -N betty
